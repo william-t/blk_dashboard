@@ -30,6 +30,7 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+
 </head>
 
 <body>
@@ -230,9 +231,11 @@
                                 <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> BlackRock vs American Funds: AUM Over Time</h3>
                             </div>
                             <div class="panel-body">
-                                <div class="flot-chart">
+                                <div id="container" style="height: 400px"></div> 
+                                <!-- <div id="Blah"> </div> -->
+<!--                                 <div class="flot-chart">
                                     <div class="flot-chart-content" id="flot-line-chart"></div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -382,6 +385,9 @@
     </div>
     <!-- /#wrapper -->
 
+
+
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -400,6 +406,123 @@
     <script src="js/plugins/flot/jquery.flot.resize.js"></script>
     <script src="js/plugins/flot/jquery.flot.pie.js"></script>
     <script src="js/plugins/flot/flot-data.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        $(function () {
+
+            // Give the points a 3D feel by adding a radial gradient
+            Highcharts.getOptions().colors = $.map(Highcharts.getOptions().colors, function (color) {
+                return {
+                    radialGradient: {
+                        cx: 0.4,
+                        cy: 0.3,
+                        r: 0.5
+                    },
+                    stops: [
+                        [0, color],
+                        [1, Highcharts.Color(color).brighten(-0.2).get('rgb')]
+                    ]
+                };
+            });
+
+            // Set up the chart
+            var chart = new Highcharts.Chart({
+                chart: {
+                    renderTo: 'container',
+                    margin: 100,
+                    type: 'scatter',
+                    options3d: {
+                        enabled: true,
+                        alpha: 10,
+                        beta: 30,
+                        depth: 250,
+                        viewDistance: 5,
+                        fitToPlot: false,
+                        frame: {
+                            bottom: { size: 1, color: 'rgba(0,0,0,0.02)' },
+                            back: { size: 1, color: 'rgba(0,0,0,0.04)' },
+                            side: { size: 1, color: 'rgba(0,0,0,0.06)' }
+                        }
+                    }
+                },
+                title: {
+                    text: 'AUM and NNF for BlackRock and American Funds Across Time'
+                },
+                subtitle: {
+                    text: 'Click and drag the plot area to rotate in space'
+                },
+                plotOptions: {
+                    scatter: {
+                        width: 10,
+                        height: 10,
+                        depth: 10
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: "NNF"
+                    }
+                },
+                xAxis: {
+                        categories: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, "2016-Q1"]
+                },
+                zAxis: {
+                        title: {
+                        text: "AUM"
+                    },
+                    showFirstLabel: false
+                },
+                legend: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'American Funds',
+                    colorByPoint: false,
+                    data: [[1, 74810.272, 1152903.633], [2, -16002.047, 734623.442], [3, -22457.046, 914392.783], [4, -50531.837, 957246.004], [5, -80352.958, 853595.432], [6, -60881.545, 919793.857], [7, -18454.739, 1102726.842], [8, 1542.95, 1168439.156], [9, 7936.552, 1174284.527], [10, 4898.376, 1186280.328]]
+                }, {
+                        name: 'BlackRock',
+                    colorByPoint: false,
+                    data: [[1, 4475.013, 142084.607], [2, 3916.703, 104104.417], [3, 10464.234, 137664.294], [4, 15240.864, 164959.71], [5, 10712.152, 173267.188], [6, 4759.527, 193335.025], [7, 11486.126, 224804.178], [8, 16856.02, 248275.056], [9, 2782.649, 245003.384], [10, -653.353, 243434.084]]
+                }]
+            });
+
+
+            // Add mouse events for rotation
+            $(chart.container).bind('mousedown.hc touchstart.hc', function (eStart) {
+                eStart = chart.pointer.normalize(eStart);
+
+                var posX = eStart.pageX,
+                    posY = eStart.pageY,
+                    alpha = chart.options.chart.options3d.alpha,
+                    beta = chart.options.chart.options3d.beta,
+                    newAlpha,
+                    newBeta,
+                    sensitivity = 5; // lower is more sensitive
+
+                $(document).bind({
+                    'mousemove.hc touchdrag.hc': function (e) {
+                        // Run beta
+                        newBeta = beta + (posX - e.pageX) / sensitivity;
+                        chart.options.chart.options3d.beta = newBeta;
+
+                        // Run alpha
+                        newAlpha = alpha + (e.pageY - posY) / sensitivity;
+                        chart.options.chart.options3d.alpha = newAlpha;
+
+                        chart.redraw(false);
+                    },
+                    'mouseup touchend': function () {
+                        $(document).unbind('.hc');
+                    }
+                });
+            });
+
+        });
+    </script>
 
 </body>
 
