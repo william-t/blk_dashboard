@@ -1,0 +1,33 @@
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Net New Flows Per Year Across Mutual Funds'
+        },
+        xAxis: {
+            categories: ["2016-Q1", 2015, 2014, 2013, 2012, 2011, 2010, 2009, 2008, 2007]
+        },
+        yAxis: {
+        		title: {
+            		text: "$ (in millions)"
+            }
+        },
+        credits: {
+            enabled: false
+        },
+        series: [{
+            name: 'BlackRock',
+            data: [-653.353, 2782.649, 16856.02, 11486.126, 4759.527, 10712.152, 15240.864, 10464.234, 3916.703, 4475.013]
+        }, {
+            name: 'American Funds',
+            data: [4898.376, 7936.552, 1542.95, -18454.739, -60881.545, -80352.958, -50531.837, -22457.046, -16002.047, 74810.272]
+        }]
+    });
+});
