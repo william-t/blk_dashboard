@@ -33,6 +33,11 @@ body {
     line-height: normal;
 }
 
+.medium {
+    font-size: 25px;
+    line-height: normal;
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 225px;
@@ -229,16 +234,4 @@ ul.alert-dropdown {
 
 #phoenix {
     margin-left: 40%;
-}
-
-.fade {
-    height: 100%;
-    width: 100%;
-    position:absolute;
-    background: -webkit-linear-gradient(left, 
-                rgba(0,0,0,0.65) 0%, 
-                rgba(0,0,0,0) 20%,
-                rgba(0,0,0,0) 80%,
-                rgba(0,0,0,0.65) 100%
-    );
 }
