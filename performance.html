@@ -153,28 +153,37 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                        <a href="index.html">Who We Are</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Our Team <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                    </li>
+                    <li>
+                        <a href="timeline.html">Our Research Process</a>
+                    </li> 
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"> Competitive Advantages <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Who We Are</a>
+                                <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
                             </li>
                             <li>
-                                <a href="timeline.html">Our Research Process</a>
+                                <a href="performance.html"><i class="fa fa-fw fa-table"></i> Performance </a>
+                            </li>
+                            <li>
+                                <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
                             </li>
                         </ul>
                     </li>
-                    <li>
+<!--                     <li>
                         <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
                     </li>
-                    <li class="active">
+                    <li>
                         <a href="performance.html"><i class="fa fa-fw fa-table"></i> Performance </a>
                     </li>
                     <li>
                         <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
-                    </li>
+                    </li> -->
 <!--                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
                     </li>
@@ -187,6 +196,7 @@
 <!--                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li> -->
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -217,7 +227,7 @@
                 <!-- Flot Charts -->
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="page-header">Returns, Expenses, and Net New Flows</h2>
+                        <h2 class="page-header">Returns and Net New Flows</h2>
                         <p class="lead">Taking in raw data, our study went on to include data visualizations of various financial metrics between BlackRock and that of American Funds.</p>
                     </div>
                 </div>
@@ -342,6 +352,58 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> American Funds Fund Performance Over Decades </h3>
+                            </div>
+                            <div class="panel-body">
+<!--                                 <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                </div> -->
+                                <img src="af_decades.png" style="max-width: 100%; max-height: 80%"></img>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> AUM of Non-BlackRock Partnered Funds </h3>
+                            </div>
+                            <div class="panel-body">
+<!--                                 <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                </div> -->
+                                <div id="nonBlkPartners"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> American Funds' Multiplier Over the Decades </h3>
+                            </div>
+                            <div class="panel-body">
+<!--                                 <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                </div> -->
+                                <img src="return_multiply.png" style="max-width: 100%; max-height: 80%"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /.row -->
 
                 <!-- Morris Charts -->
           <!--       <div class="row">
@@ -621,6 +683,55 @@
                 }, {
                     name: 'American Funds',
                     data: [4898.376, 7936.552, 1542.95, -18454.739, -60881.545, -80352.958, -50531.837, -22457.046, -16002.047, 74810.272]
+                }]
+            });
+        });
+
+
+        $(function () {
+            $('#nonBlkPartners').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Non-BLK Partnered AUM'
+                },
+                xAxis: {
+                    categories: ['Euro Pacific Growth Fund', 'Growth Fund of America', 'New Economy Fund', 'New Perspective Fund', 'AMCAP Fund', 'New World Fund', 'Small Cap World Fund', 'Developing World G&I Fund', 'American Mutual Fund', 'Capital World Growth Fund', 'Fundamental Investors', 'International G&I Fund', 'Investment Company of America', 'Washington Mutual Investors Fund', 'Capital Income Builder', 'Income Fund of America', 'American Balanced Fund', 'Global Balanced Fund']
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Percent Fund AUM'
+                    }
+                },
+                tooltip: {
+                    pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
+                    shared: true
+                },
+                plotOptions: {
+                    column: {
+                        stacking: 'percent'
+                    }
+                },
+                series: [{
+                    name: 'Other Investors',
+                    data: [115439327.4165,15789582.3158,12913476.7459,47519731.8876,35707372.7222,18962869.4706,22495340.6424,1529677.5859,28561882.5107,65990749.8947,54206979.4717,8348928.6012,56413325.2146,65111036.7041,27919470.1367,70004527.1604,72049316.6695,7531874.4102
+
+        ]
+                }, {
+                    name: 'LPL Financial',
+                    data: [0,680022.516,88370.1492,72196.9945,418879.6274,0,36255.7348,10670.5152,212476.7373,0,600773.8922,0,0,152691.5044,508130.7414,539414.2326,171758.8376,49754.8416
+
+        ]
+                }, {
+                    name: 'Edward Jones',
+                    data: [6125001.5835,16469604.8318,2733960.1049,8573953.1179,7863411.6504,3525372.5294,3672575.6228,553748.8989,6866762.752,18314077.1053,17956620.6361,2564411.3988,15475964.7854,11182504.7915,28427600.8781,26448069.607,12345958.4929, 1625996.75 
+
+         
+
+
+        ]
                 }]
             });
         });
