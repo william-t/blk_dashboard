@@ -200,7 +200,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Blank Page
+                            Company Culture Comparation
                             <small>Subheading</small>
                         </h1>
                         <ol class="breadcrumb">
@@ -210,6 +210,50 @@
                             <li class="active">
                                 <i class="fa fa-file"></i> Blank Page
                             </li>
+                        <br>   
+                        </br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="input-group">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                              </ul>
+                          </div><!-- /btn-group -->
+                          <input type="text" class="form-control" placeholder="Please input a company name" aria-label="...">
+                      </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control"  placeholder="Please input a competitor" aria-label="...">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                      </ul>
+                  </div><!-- /btn-group -->
+              </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+
+      <br></br>
+        <button type="button" class="btn btn-primary" onclick="showDisplay()">Go</button>
+      <br></br>
+
+      <div class="progress" id="progress" style="display:none">
+  <div id="progressBar"class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
                         </ol>
                     </div>
                 </div>
@@ -235,3 +279,26 @@
 </body>
 
 </html>
+
+<script>
+    // angular.module('myApp',[]).controller('myCtrl', ['$scope', function($scope){
+        function showDisplay(){
+            document.getElementById("progress").style.display= "block";
+            var percent = 0;
+            setInterval(function(){
+                percent += 1;
+                var percentStr = percent.toString() + "%";
+                document.getElementById("progressBar").style.width=percentStr; 
+                if (percent == 100) {
+                    myFunc();
+                }
+                }, 100);
+        }
+
+        var myFunc = function(){
+            alert('hi');
+        }
+
+    // }]);
+
+</script>
