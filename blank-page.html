@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
 
@@ -8,7 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <title>SB Admin - Bootstrap Admin Template</title>
 
     <!-- Bootstrap Core CSS -->
@@ -19,6 +25,8 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.html">Team Phoenix: BlackRock vs American Funds</a>
             </div>
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
@@ -153,27 +161,42 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard </a>
+                        <a href="index.html"><i class="fa fa-fw fa-users"></i>Who We Are</a>
                     </li>
                     <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Our Team <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="timeline.html"><i class="fa fa-fw fa-list"></i>Agenda</a>
+                    </li> 
+                    <li>
+                        <a href="intro-video.html"><i class="fa fa-fw fa-video-camera"></i>American Funds Video</a>
+                    </li> 
+                    <li>
+                        <a href="overview.html"><i class="fa fa-fw fa-paragraph"></i>Company Overviews</a>
+                    </li> 
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> The Problem Statements </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-trophy"></i> Competitive Adv <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Who We Are</a>
+                                <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
                             </li>
                             <li>
-                                <a href="#">Our Research Process</a>
+                                <a href="performance.html"><i class="fa fa-fw fa-table"></i> Reliability </a>
+                            </li>
+                            <li>
+                                <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
 <!--                     <li>
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
                     </li>
                     <li>
-                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Forms</a>
+                        <a href="performance.html"><i class="fa fa-fw fa-table"></i> Performance </a>
+                    </li>
+                    <li>
+                        <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
                     </li> -->
 <!--                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
@@ -182,11 +205,24 @@
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li> -->
                     <li class="active">
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Target Audience Tool </a>
+                    </li>
+                    <li>
+                        <a href="guidingPrinciples.html"><i class="fa fa-fw fa-android"></i> Guiding Principles </a>
+                    </li>
+                    <li>
+                        <a href="pitch.html"><i class="fa fa-fw fa-clock-o"></i> Looking Forward </a>
+                    </li>
+                    <li>
+                        <a href="end-video.html"><i class="fa fa-fw fa-video-camera"></i> BlackRock Video </a>
+                    </li>
+                    <li>
+                        <a href="gratitude.html"><i class="fa fa-fw fa-smile-o"></i> Gratitude </a>
                     </li>
 <!--                     <li>
                         <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
                     </li> -->
+
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -200,8 +236,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Blank Page
-                            <small>Subheading</small>
+                            Target Audience Tool
+                            <small>TAT</small>
                         </h1>
                         <ol class="breadcrumb">
                             <li>
@@ -210,6 +246,205 @@
                             <li class="active">
                                 <i class="fa fa-file"></i> Blank Page
                             </li>
+                        <br>   
+                        </br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <div class="input-group">
+                              <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a href="#">Action</a></li>
+                                  <li><a href="#">Another action</a></li>
+                                  <li><a href="#">Something else here</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">Separated link</a></li>
+                              </ul>
+                          </div><!-- /btn-group -->
+                          <input id="firstCompany" type="text" class="form-control" placeholder="Please input a company name" aria-label="...">
+                      </div><!-- /input-group -->
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                      <input type="text" class="form-control"  placeholder="Please input a competitor" aria-label="...">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#">Action</a></li>
+                          <li><a href="#">Another action</a></li>
+                          <li><a href="#">Something else here</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Separated link</a></li>
+                      </ul>
+                  </div><!-- /btn-group -->
+              </div><!-- /input-group -->
+          </div><!-- /.col-lg-6 -->
+      </div><!-- /.row -->
+
+      <br></br>
+        <button  type="button" class="btn btn-primary" onclick="showDisplay()">Go</button>
+      <br></br>
+
+      <div class="progress" id="progress" style="display:none">
+  <div id="progressBar"class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+    <span class="sr-only">45% Complete</span>
+  </div>
+</div>
+
+
+<div id="compareBox" class="cd-pricing-container cd-full-width cd-secondary-theme" style="display:none">
+        <div class="cd-pricing-switcher">
+            <p class="fieldset">
+                <input type="radio" name="duration" value="monthly" id="monthly" checked>
+                <label for="monthly">Age</label>
+                <input type="radio" name="duration" value="yearly" id="yearly">
+                <label for="yearly">Impression</label>
+                <span class="cd-switch"></span>
+            </p>
+        </div> <!-- .cd-pricing-switcher -->
+
+        <ul class="cd-pricing-list cd-bounce-invert">
+            <li class="cd-popular">
+                <ul class="cd-pricing-wrapper">
+                    <li data-type="monthly" class="is-visible">
+                        <header class="cd-pricing-header">
+                            <h2 id="competitor">American Funds</h2>
+
+                            <div class="cd-price">
+                                <span class="cd-currency">age</span>
+                                <span id="competitorAge"class="cd-value">44.9</span>
+                                <span class="cd-duration">average</span>
+                            </div>
+                        </header> <!-- .cd-pricing-header -->
+
+<!--                         <div class="cd-pricing-body">
+                            <ul class="cd-pricing-features">
+                                <li><em>512MB</em> Memory</li>
+                                <li><em>3</em> Users</li>
+                                <li><em>5</em> Websites</li>
+                                <li><em>7</em> Domains</li>
+                                <li><em>Unlimited</em> Bandwidth</li>
+                                <li><em>24/7</em> Support</li>
+                            </ul>
+                        </div> .cd-pricing-body --> 
+
+<!--                         <footer class="cd-pricing-footer">
+                            <a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+                        </footer> --> <!-- .cd-pricing-footer -->
+                    </li>
+
+                    <li data-type="yearly" class="is-hidden">
+                        <header class="cd-pricing-header">
+                            <h2 id="sentimentTitle">American Funds</h2>
+                            <h3>Sentiment Ratio of Positive to Negative Mentions</h3>
+
+                            <div class="cd-price">
+                                <span class="cd-value">3:1</span>
+                                <!-- <span class="cd-duration">yr</span> -->
+                            </div>
+
+                            <h3>Chance of Being Repeatedly Mentioned</h3>
+                            <div class="cd-price">
+                                <span class="cd-value" id="sentimentMentioned">21%</span>
+                                <!-- <span class="cd-duration">yr</span> -->
+                            </div>
+                        </header> <!-- .cd-pricing-header -->
+<!-- .cd-pricing-body -->
+
+                        <!-- <footer class="cd-pricing-footer">
+                            <a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+                        </footer> --> <!-- .cd-pricing-footer -->
+                    </li>
+                </ul>
+            </li> <!-- .cd-pricing-wrapper -->
+
+            <li>
+                <ul class="cd-pricing-wrapper">
+                    <li data-type="monthly" class="is-visible">
+                        <header class="cd-pricing-header">
+                            <h2>BlackRock</h2>
+
+                            <div class="cd-price">
+                                <span class="cd-currency">age</span>
+                                <span class="cd-value">33.5</span>
+                                <span class="cd-duration">average</span>
+                            </div>
+                        </header> <!-- .cd-pricing-header -->
+
+<!--                         <div class="cd-pricing-body">
+                            <ul class="cd-pricing-features">
+                                <li><em>1024MB</em> Memory</li>
+                                <li><em>5</em> Users</li>
+                                <li><em>10</em> Websites</li>
+                                <li><em>10</em> Domains</li>
+                                <li><em>Unlimited</em> Bandwidth</li>
+                                <li><em>24/7</em> Support</li>
+                            </ul>
+                        </div>  --><!-- .cd-pricing-body -->
+
+<!--                         <footer class="cd-pricing-footer">
+                            <a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+                        </footer>  --><!-- .cd-pricing-footer -->
+                    </li>
+
+                    <li data-type="yearly" class="is-hidden">
+                        <header class="cd-pricing-header">
+                            <h2>BlackRock</h2>
+                            <h3 >Sentiment Ratio of Positive to Negative Mentions</h3>
+
+                            <div class="cd-price">
+                                <span class="cd-value">10:1</span>
+                                <!-- <span class="cd-duration">yr</span> -->
+                            </div>
+
+                            <h3 >Chance of Being Repeatedly Mentioned</h3>
+                            <div class="cd-price">
+                                <span class="cd-value">30%</span>
+                                <!-- <span class="cd-duration">yr</span> -->
+                            </div>
+                        </header> <!-- .cd-pricing-header -->
+
+                        <!-- <div class="cd-pricing-body">
+                            <ul class="cd-pricing-features">
+                                <li><em>30%</em> chance of being repeatedly mentioned</li>
+                                <li><em>5</em> Users</li>
+                                <li><em>10</em> Websites</li>
+                                <li><em>10</em> Domains</li>
+                                <li><em>Unlimited</em> Bandwidth</li>
+                                <li><em>24/7</em> Support</li>
+                            </ul>
+                        </div> --><!-- .cd-pricing-body -->
+
+                       <!--  <footer class="cd-pricing-footer">
+                            <a class="cd-select" href="http://codyhouse.co/?p=429">Select</a>
+                        </footer> --> <!-- .cd-pricing-footer -->
+                    </li>
+                </ul> <!-- .cd-pricing-wrapper -->
+            </li>
+        </ul> <!-- .cd-pricing-list -->
+    </div> <!-- .cd-pricing-container -->
+
+
+                <br></br><br></br><br></br>
+
+                <div class="row" id="charts" style="display:none">
+                    <div class="col-lg-12">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Target Market Age</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="percentReturns"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+
+
+
                         </ol>
                     </div>
                 </div>
@@ -235,3 +470,128 @@
 </body>
 
 </html>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script>
+    // angular.module('myApp',[]).controller('myCtrl', ['$scope', function($scope){
+        function showDisplay(){
+            document.getElementById("progress").style.display= "block";
+            var percent = 0;
+            setInterval(function(){
+                percent += 2;
+                var percentStr = percent.toString() + "%";
+                document.getElementById("progressBar").style.width=percentStr; 
+                if (percent == 100) {
+                    myFunc();
+                }
+                }, 50);
+        }
+
+        var myFunc = function(){
+            var x = document.getElementById("firstCompany").value;
+            
+            if (x == "vanguard") {
+                document.getElementById("competitor").innerHTML = "Vanguard";
+                document.getElementById("competitorAge").innerHTML = "50.2";
+                document.getElementById("sentimentTitle").innerHTML = "Vanguard";
+                document.getElementById("sentimentMentioned").innerHTML = "29%";
+            }
+            document.getElementById("progress").style.display= "none";
+            document.getElementById("compareBox").style.display= "block";
+            document.getElementById("charts").style.display= "block";
+            $('#percentReturns').highcharts().reflow();
+        }
+
+
+
+
+        $(function () {
+            $('#percentReturns').highcharts({
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'Target Market age'
+                },
+                subtitle: {
+                    text: 'Result from running the tool program'
+                },
+                xAxis: {
+                    type: 'category',
+                    title: {
+                        text: 'Company Name'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Target customer average age '
+                    },
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+                },
+
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+                series: [{
+                    // Define the data points. All series have a dummy year
+                    // of 1970/71 in order to be compared on the same x axis. Note
+                    // that in JavaScript, months start at 0 for January, 1 for February etc.
+                    data: [
+                        ["Brookdale Senior Living", 1961],
+                        ["United States Golf Association - USGA", 1965],
+                        ["FEMA Federal Emergency Management Agency", 1966],
+                        ["Map Quest", 1966],
+                        ["NPR", 1969],
+                        ["The Wall Street Journal", 1972],
+                        ["Volvo", 1974],
+                        ["BBC News", 1974],
+                        ["Robinhood", 1975],
+                        ["Google", 1976],
+                        ["Myspace", 1976],
+                        ["Spotify", 1978],
+                        ["Teen Vogue", 1978],
+                        ["Salesforce", 1980],
+                        ["Abercrombie & Fitch", 1980],
+                        ["seventeen", 1980],
+                        ["Snapchat", 1980],
+                        ["Forever 21", 1981],
+                        ["Luxe", 1984],
+                        ["Yik Yak", 1985]
+
+
+                    ]
+                }]
+            });
+        });
+    // }]);
+
+</script>

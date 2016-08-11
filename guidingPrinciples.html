@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Team Phoenix: BlackRock vs American Funds</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu message-dropdown">
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>William Tang</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>William Tang</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-preview">
+                            <a href="#">
+                                <div class="media">
+                                    <span class="pull-left">
+                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
+                                    </span>
+                                    <div class="media-body">
+                                        <h5 class="media-heading"><strong>William Tang</strong>
+                                        </h5>
+                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="message-footer">
+                            <a href="#">Read All New Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
+                    <ul class="dropdown-menu alert-dropdown">
+                        <li>
+                            <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-warning">Alert Badge</span></a>
+                        </li>
+                        <li>
+                            <a href="#">Alert Name <span class="label label-danger">Alert Badge</span></a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">View All</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> William Tang <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="index.html"><i class="fa fa-fw fa-users"></i>Who We Are</a>
+                    </li>
+                    <li>
+                        <a href="timeline.html"><i class="fa fa-fw fa-list"></i>Agenda</a>
+                    </li> 
+                    <li>
+                        <a href="intro-video.html"><i class="fa fa-fw fa-video-camera"></i>American Funds Video</a>
+                    </li> 
+                    <li>
+                        <a href="overview.html"><i class="fa fa-fw fa-paragraph"></i>Company Overviews</a>
+                    </li> 
+                    <li>
+                        <a href="dashboard.html"><i class="fa fa-fw fa-dashboard"></i> The Problem Statements </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-trophy"></i> Competitive Adv <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="demo" class="collapse">
+                            <li>
+                                <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
+                            </li>
+                            <li>
+                                <a href="performance.html"><i class="fa fa-fw fa-table"></i> Reliability </a>
+                            </li>
+                            <li>
+                                <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
+                            </li>
+                        </ul>
+                    </li>
+<!--                     <li>
+                        <a href="consistency.html"><i class="fa fa-fw fa-bar-chart-o"></i> Consistency </a>
+                    </li>
+                    <li>
+                        <a href="performance.html"><i class="fa fa-fw fa-table"></i> Performance </a>
+                    </li>
+                    <li>
+                        <a href="target_market.html"><i class="fa fa-fw fa-edit"></i> Target Market </a>
+                    </li> -->
+<!--                     <li>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                    </li>
+                    <li>
+                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+                    </li> -->
+                    <li>
+                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Target Audience Tool </a>
+                    </li>
+                    <li class="active">
+                        <a href="guidingPrinciples.html"><i class="fa fa-fw fa-android"></i> Guiding Principles </a>
+                    </li>
+                    <li>
+                        <a href="pitch.html"><i class="fa fa-fw fa-clock-o"></i> Looking Forward </a>
+                    </li>
+                    <li>
+                        <a href="end-video.html"><i class="fa fa-fw fa-video-camera"></i> BlackRock Video </a>
+                    </li>
+                    <li>
+                        <a href="gratitude.html"><i class="fa fa-fw fa-smile-o"></i> Gratitude </a>
+                    </li>
+<!--                     <li>
+                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+                    </li> -->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            The Guiding Principles
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
+                            </li>
+                            <li class="active">
+                                <i class="fa fa-bar-chart-o"></i> Guiding Principles
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <!-- Flot Charts -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Complexity vs Simplicity</h2> 
+                    </div>
+                </div>
+                <!-- /.row -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> <button id="switchButton" type="button">A Look Inside...</button> </h3>
+                            </div>
+                            <div class="panel-body">
+<!--                                 <div class="flot-chart">
+                                    <div class="flot-chart-content" id="flot-line-chart"></div>
+                                </div> -->
+                                <img id="google" src="google.png" style="width: 100%"></img>
+                            </br>
+                                <img id="algo" src="algo.jpg" style="width: 100%"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+
+
+<!-- 
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> BlackRock vs American Funds: Return Premium Over Time (%G) </h3>
+                            </div>
+                            <div class="panel-body">
+                                <img src="visuals/chartsG.png" style="width: 490px"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> BlackRock vs American Funds: Return Premium Over Time (%N) </h3>
+                            </div>
+                            <div class="panel-body">
+                                <img src="visuals/chartsN.png" style="width: 490px"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /.row -->
+
+                <!-- /.row -->
+
+<!--                 <div class="row">
+                    <div class="col-lg-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> BlackRock vs American Funds: Return Premium Over Time (%G) w/STD </h3>
+                            </div>
+                            <div class="panel-body">
+                                <img src="visuals/return_std_G.png" style="width: 490px"></img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> BlackRock vs American Funds: Return Premium Over Time (%N) w/STD </h3>
+                            </div>
+                            <div class="panel-body">
+                                <img src="visuals/return_std_N.png" style="width: 490px"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <!-- Morris Charts -->
+          <!--       <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="page-header">Predictive Charts</h2>
+                        <p class="lead">Going forward with our solution, we predict that there will be a general increase in market share acquired by BlackRock, while American Funds' competitive advantage slowly begins to wane over time. </p>
+                    </div>
+                </div> -->
+                <!-- /.row -->
+
+          <!--       <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> BlackRock Market Share Over Time </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-area-chart"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /.row -->
+
+                <!-- <div class="row">
+                    <div class="col-lg-4">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Current Breakdown of BlackRock's Market Share </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-donut-chart"></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Predicted Decline of American Funds' Performance Over Time </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-line-chart"></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Future Comparison of BlackRock Funds Against American Funds </h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="morris-bar-chart"></div>
+                                <div class="text-right">
+                                    <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+    <!-- Flot Charts JavaScript -->
+    <!--[if lte IE 8]><script src="js/excanvas.min.js"></script><![endif]-->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/flot-data.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script>
+        $("#algo").hide();
+
+        $(function () {
+            $('#percentReturns').highcharts({
+                chart: {
+                    type: 'spline'
+                },
+                title: {
+                    text: 'BlackRock vs American Funds (% N Returns)'
+                },
+                subtitle: {
+                    text: 'Irregular time data in Highcharts JS'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    dateTimeLabelFormats: { // don't display the dummy year
+                        month: '%e. %b',
+                        year: '%b'
+                    },
+                    title: {
+                        text: 'Date'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Average % '
+                    },
+                    min: -10
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%e. %b}: {point.y:.2f} m'
+                },
+
+                plotOptions: {
+                    spline: {
+                        marker: {
+                            enabled: true
+                        }
+                    }
+                },
+
+                series: [{
+                    name: 'BlackRock',
+                    // Define the data points. All series have a dummy year
+                    // of 1970/71 in order to be compared on the same x axis. Note
+                    // that in JavaScript, months start at 0 for January, 1 for February etc.
+                    data: [
+                        [Date.UTC(1999, 12, 31), 5.299282923],
+                        [Date.UTC(2005, 12, 31), 4.914895308],
+                        [Date.UTC(2006, 12, 31), 3.978957142],
+                        [Date.UTC(2007, 12, 31), 3.550559753],
+                        [Date.UTC(2008, 12, 31), 8.199007105],
+                        [Date.UTC(2009, 12, 31), 5.839402946],
+                        [Date.UTC(2010, 12, 31), 5.196626262],
+                        [Date.UTC(2011, 12, 31), 6.389710847],
+                        [Date.UTC(2012, 12, 31), 5.496673189],
+                        [Date.UTC(2013, 12, 31), 2.137318436],
+                        [Date.UTC(2014, 12, 31), -0.439099156],
+                        [Date.UTC(2015, 3, 31), -3.457849393],
+                        [Date.UTC(2015, 6, 31), -2.492956426],
+                        [Date.UTC(2015, 9, 31), 2.623856199],
+                        [Date.UTC(2015, 11, 31), -1.22961107],
+                        [Date.UTC(2015, 12, 24), -0.332647638],
+                    ]
+                }, {
+                    name: 'American Funds',
+                    data: [
+                        [Date.UTC(1999, 12, 31), 5.306081315],
+                        [Date.UTC(2005, 12, 31), 4.919064428],
+                        [Date.UTC(2006, 12, 31), 3.98312563],
+                        [Date.UTC(2007, 12, 31), 3.55457009],
+                        [Date.UTC(2008, 12, 31), 8.202666167],
+                        [Date.UTC(2009, 12, 31), 5.842859543],
+                        [Date.UTC(2010, 12, 31), 5.216414058],
+                        [Date.UTC(2011, 12, 31), 6.399460424],
+                        [Date.UTC(2012, 12, 31), 5.515889301],
+                        [Date.UTC(2013, 12, 31), 2.12617734],
+                        [Date.UTC(2014, 12, 31), -0.442698728],
+                        [Date.UTC(2015, 3, 31), -3.4438961],
+                        [Date.UTC(2015, 6, 31), -2.478286354],
+                        [Date.UTC(2015, 9, 31), 2.618755552],
+                        [Date.UTC(2015, 11, 31), -1.228296741],
+                        [Date.UTC(2015, 12, 24), -0.327552525],
+                    ]
+                }]
+            });
+        });
+
+        $(function () {
+            $('#percentNet').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'BlackRock vs American Funds: % Net Returns'
+                },
+                xAxis: {
+                    categories: ['Year 1', 'Year 3', 'Year 5', 'Year 10']
+                },
+                yAxis: {
+                    title: {
+                    text: 'Percent Returns'
+                  }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'BlackRock',
+                    data: [-0.0430367842, 4.821906849, 4.586863864, 4.485091954]
+                }, {
+                    name: 'American Funds',
+                    data: [-0.457464695, 6.906852884, 6.615727361, 5.944200237]
+                }]
+            });
+        });
+
+        $(function () {
+            $('#percentGross').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'BlackRock vs American Funds: % Gross Returns'
+                },
+                xAxis: {
+                    categories: ['Year 1', 'Year 3', 'Year 5', 'Year 10']
+                },
+                yAxis: {
+                    title: {
+                    text: 'Percent Returns'
+                  }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'BlackRock',
+                    data: [-0.16037, 5.124665, 4.960545, 4.919844]
+                }, {
+                    name: 'American Funds',
+                    data: [-0.01579, 7.32996, 7.003098, 6.539969]
+                }]
+            });
+        });
+
+        $(function () {
+            // Age categories
+            var categories = ['0-0.2', '0.21-0.4', '0.41-0.6', '0.61-0.8', '0.81-1.0', '1.01-1.2', '1.21-1.4', '1.41-1.6', '1.61-1.8', '1.81-2.0', '2.01-2.2', '2.21-2.4'];
+            $(document).ready(function () {
+                $('#expenseRatio').highcharts({
+                    chart: {
+                        type: 'bar'
+                    },
+                    title: {
+                        text: 'Stratification of Prospectus Net Expense Ratio'
+                    },
+                    subtitle: {
+                        text: 'Source: MorningStar Data'
+                    },
+                    xAxis: [{
+                        categories: categories,
+                        reversed: false,
+                        labels: {
+                            step: 1
+                        }
+                    }, { // mirror axis on right side
+                        opposite: true,
+                        reversed: false,
+                        categories: categories,
+                        linkedTo: 0,
+                        labels: {
+                            step: 1
+                        }
+                    }],
+                    yAxis: {
+                        title: {
+                            text: null
+                        },
+                        labels: {
+                            formatter: function () {
+                                return Math.abs(this.value) + '%';
+                            }
+                        }
+                    },
+
+                    plotOptions: {
+                        series: {
+                            stacking: 'normal'
+                        }
+                    },
+
+                    tooltip: {
+                        formatter: function () {
+                            return '<b>' + this.series.name + ', age ' + this.point.category + '</b><br/>' +
+                                'Population: ' + Highcharts.numberFormat(Math.abs(this.point.y), 0);
+                        }
+                    },
+
+                    series: [{
+                        name: 'American Funds',
+                        data: [-0.0, -5.8, -18.6, -19.7, -9.0, -8.9, -8.9,
+                            -20.4, -1.8, -0.6]
+                    }, {
+                        name: 'BlackRock',
+                        data: [14.1, 5.0, 12.6, 12.9, 13.4, 8.5, 8.8, 6.0, 6.6, 3.2, 4.3, 1.3, 0.9, 0.6]
+                    }]
+                });
+            });
+
+        });
+
+        $(function () {
+            $('#nnfAcross').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: 'Net New Flows Per Year Across Mutual Funds'
+                },
+                xAxis: {
+                    categories: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, "2016-Q1"]
+                },
+                yAxis: {
+                        title: {
+                            text: "$ (in millions)"
+                    }
+                },
+                credits: {
+                    enabled: false
+                },
+                series: [{
+                    name: 'BlackRock',
+                    data: [4475.013, 3916.703, 10464.234, 15240.864, 10712.152, 4759.527, 11486.126, 16856.02, 2782.649, -653.353]
+                }, {
+                    name: 'American Funds',
+                    data: [74810.272, -16002.047, -22457.046, -50531.837, -80352.958, -60881.545, -18454.739, 1542.95, 7936.552, 4898.376]
+                }]
+            });
+        });
+
+
+        $(function () {
+            $('#afExperience').highcharts({
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: "American Funds' Portfolio Managers' Experience"
+                },
+                xAxis: {
+                    type: 'category',
+                    labels: {
+                        rotation: -45,
+                        style: {
+                            fontSize: '13px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                },
+                yAxis: {
+                    min: 0,
+                    max: 100,
+                    title: {
+                        text: '% of Employees'
+                    }
+                },
+                legend: {
+                    enabled: false
+                },
+                tooltip: {
+                    pointFormat: 'Population in 2008: <b>{point.y:.1f} millions</b>'
+                },
+                series: [{
+                    name: 'Population',
+                    data: [
+                        ['10+ Years', 100],
+                        ['20+ Years', 86],
+                        ['30+ Years', 32],
+
+                    ],
+                    dataLabels: {
+                        enabled: true,
+                        rotation: -90,
+                        color: '#FFFFFF',
+                        align: 'right',
+                        format: '{point.y:.1f}', // one decimal
+                        y: 10, // 10 pixels down from the top
+                        style: {
+                            fontSize: '13px',
+                            fontFamily: 'Verdana, sans-serif'
+                        }
+                    }
+                }]
+            });
+        });
+
+        $("#switchButton").click(function(){
+            $("#google").fadeOut();
+            $("#algo").fadeIn();
+        });
+    </script>
+
+</body>
+
+</html>
